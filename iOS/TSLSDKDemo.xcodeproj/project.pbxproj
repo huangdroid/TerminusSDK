@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2CAB04B1F00B85E009A07FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CAB04A1F00B85E009A07FA /* main.m */; };
+		E2CAB04E1F00B85E009A07FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CAB04D1F00B85E009A07FA /* AppDelegate.m */; };
+		E2CAB0511F00B85E009A07FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CAB0501F00B85E009A07FA /* ViewController.m */; };
+		E2CAB0541F00B85E009A07FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0521F00B85E009A07FA /* Main.storyboard */; };
+		E2CAB0561F00B85E009A07FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0551F00B85E009A07FA /* Assets.xcassets */; };
+		E2CAB0591F00B85E009A07FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0571F00B85E009A07FA /* LaunchScreen.storyboard */; };
+		E2CAB06E1F00B9EF009A07FA /* ble_device_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0651F00B9EF009A07FA /* ble_device_name.txt */; };
+		E2CAB0701F00B9EF009A07FA /* key_type_signal.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0691F00B9EF009A07FA /* key_type_signal.plist */; };
+		E2CAB0711F00B9EF009A07FA /* TSLSSKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB06A1F00B9EF009A07FA /* TSLSSKeychain.bundle */; };
+		E2CAB0751F00BA34009A07FA /* TerminusLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0731F00BA34009A07FA /* TerminusLocalizable.strings */; };
+		E2CAB0781F00BB3D009A07FA /* Terminus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0771F00BB3D009A07FA /* Terminus.framework */; };
+		E2CAB07A1F00BB6A009A07FA /* TerminusUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0791F00BB6A009A07FA /* TerminusUI.framework */; };
+		E2CAB07D1F00BC0E009A07FA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB07C1F00BC0E009A07FA /* CoreBluetooth.framework */; };
+		E2CAB07F1F00BC17009A07FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB07E1F00BC17009A07FA /* Security.framework */; };
+		E2CAB0811F00BC26009A07FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0801F00BC26009A07FA /* libsqlite3.tbd */; };
+		E2CAB0831F00BC34009A07FA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0821F00BC34009A07FA /* CoreFoundation.framework */; };
+		E2CAB0851F00BD3E009A07FA /* TerminusUISource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2CAB0841F00BD3E009A07FA /* TerminusUISource.bundle */; };
+		E2CAB0871F00DFC0009A07FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0861F00DFC0009A07FA /* UIKit.framework */; };
+		E2CAB0891F00DFC8009A07FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAB0881F00DFC8009A07FA /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E2CAB0461F00B85E009A07FA /* TSLSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSLSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CAB04A1F00B85E009A07FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2CAB04C1F00B85E009A07FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2CAB04D1F00B85E009A07FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2CAB04F1F00B85E009A07FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2CAB0501F00B85E009A07FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2CAB0531F00B85E009A07FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2CAB0551F00B85E009A07FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2CAB0581F00B85E009A07FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2CAB05A1F00B85E009A07FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CAB0621F00B8E6009A07FA /* TSLSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TSLSDKDemo.entitlements; sourceTree = "<group>"; };
+		E2CAB0651F00B9EF009A07FA /* ble_device_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ble_device_name.txt; sourceTree = "<group>"; };
+		E2CAB0691F00B9EF009A07FA /* key_type_signal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = key_type_signal.plist; sourceTree = "<group>"; };
+		E2CAB06A1F00B9EF009A07FA /* TSLSSKeychain.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TSLSSKeychain.bundle; sourceTree = "<group>"; };
+		E2CAB0741F00BA34009A07FA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TerminusLocalizable.strings"; sourceTree = "<group>"; };
+		E2CAB0761F00BA3D009A07FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TerminusLocalizable.strings; sourceTree = "<group>"; };
+		E2CAB0771F00BB3D009A07FA /* Terminus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Terminus.framework; sourceTree = "<group>"; };
+		E2CAB0791F00BB6A009A07FA /* TerminusUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TerminusUI.framework; sourceTree = "<group>"; };
+		E2CAB07C1F00BC0E009A07FA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E2CAB07E1F00BC17009A07FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E2CAB0801F00BC26009A07FA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E2CAB0821F00BC34009A07FA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E2CAB0841F00BD3E009A07FA /* TerminusUISource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TerminusUISource.bundle; sourceTree = "<group>"; };
+		E2CAB0861F00DFC0009A07FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2CAB0881F00DFC8009A07FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2CAB0431F00B85E009A07FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CAB0891F00DFC8009A07FA /* Foundation.framework in Frameworks */,
+				E2CAB0871F00DFC0009A07FA /* UIKit.framework in Frameworks */,
+				E2CAB0831F00BC34009A07FA /* CoreFoundation.framework in Frameworks */,
+				E2CAB0811F00BC26009A07FA /* libsqlite3.tbd in Frameworks */,
+				E2CAB07F1F00BC17009A07FA /* Security.framework in Frameworks */,
+				E2CAB07D1F00BC0E009A07FA /* CoreBluetooth.framework in Frameworks */,
+				E2CAB0781F00BB3D009A07FA /* Terminus.framework in Frameworks */,
+				E2CAB07A1F00BB6A009A07FA /* TerminusUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2CAB03D1F00B85E009A07FA = {
+			isa = PBXGroup;
+			children = (
+				E2CAB0481F00B85E009A07FA /* TSLSDKDemo */,
+				E2CAB0471F00B85E009A07FA /* Products */,
+				E2CAB07B1F00BC0E009A07FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2CAB0471F00B85E009A07FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB0461F00B85E009A07FA /* TSLSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2CAB0481F00B85E009A07FA /* TSLSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB0621F00B8E6009A07FA /* TSLSDKDemo.entitlements */,
+				E2CAB0611F00B8D6009A07FA /* SDK */,
+				E2CAB04C1F00B85E009A07FA /* AppDelegate.h */,
+				E2CAB04D1F00B85E009A07FA /* AppDelegate.m */,
+				E2CAB04F1F00B85E009A07FA /* ViewController.h */,
+				E2CAB0501F00B85E009A07FA /* ViewController.m */,
+				E2CAB0521F00B85E009A07FA /* Main.storyboard */,
+				E2CAB0551F00B85E009A07FA /* Assets.xcassets */,
+				E2CAB0571F00B85E009A07FA /* LaunchScreen.storyboard */,
+				E2CAB05A1F00B85E009A07FA /* Info.plist */,
+				E2CAB0491F00B85E009A07FA /* Supporting Files */,
+			);
+			path = TSLSDKDemo;
+			sourceTree = "<group>";
+		};
+		E2CAB0491F00B85E009A07FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB04A1F00B85E009A07FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CAB0611F00B8D6009A07FA /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB0841F00BD3E009A07FA /* TerminusUISource.bundle */,
+				E2CAB0791F00BB6A009A07FA /* TerminusUI.framework */,
+				E2CAB0771F00BB3D009A07FA /* Terminus.framework */,
+				E2CAB0731F00BA34009A07FA /* TerminusLocalizable.strings */,
+				E2CAB0651F00B9EF009A07FA /* ble_device_name.txt */,
+				E2CAB0691F00B9EF009A07FA /* key_type_signal.plist */,
+				E2CAB06A1F00B9EF009A07FA /* TSLSSKeychain.bundle */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		E2CAB07B1F00BC0E009A07FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CAB0881F00DFC8009A07FA /* Foundation.framework */,
+				E2CAB0861F00DFC0009A07FA /* UIKit.framework */,
+				E2CAB0821F00BC34009A07FA /* CoreFoundation.framework */,
+				E2CAB0801F00BC26009A07FA /* libsqlite3.tbd */,
+				E2CAB07E1F00BC17009A07FA /* Security.framework */,
+				E2CAB07C1F00BC0E009A07FA /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2CAB0451F00B85E009A07FA /* TSLSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CAB05D1F00B85E009A07FA /* Build configuration list for PBXNativeTarget "TSLSDKDemo" */;
+			buildPhases = (
+				E2CAB0421F00B85E009A07FA /* Sources */,
+				E2CAB0431F00B85E009A07FA /* Frameworks */,
+				E2CAB0441F00B85E009A07FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSLSDKDemo;
+			productName = TSLSDKDemo;
+			productReference = E2CAB0461F00B85E009A07FA /* TSLSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2CAB03E1F00B85E009A07FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "\bTom";
+				TargetAttributes = {
+					E2CAB0451F00B85E009A07FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 94DK5S9GMV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E2CAB0411F00B85E009A07FA /* Build configuration list for PBXProject "TSLSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = E2CAB03D1F00B85E009A07FA;
+			productRefGroup = E2CAB0471F00B85E009A07FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2CAB0451F00B85E009A07FA /* TSLSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2CAB0441F00B85E009A07FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CAB0591F00B85E009A07FA /* LaunchScreen.storyboard in Resources */,
+				E2CAB0561F00B85E009A07FA /* Assets.xcassets in Resources */,
+				E2CAB0541F00B85E009A07FA /* Main.storyboard in Resources */,
+				E2CAB0711F00B9EF009A07FA /* TSLSSKeychain.bundle in Resources */,
+				E2CAB0701F00B9EF009A07FA /* key_type_signal.plist in Resources */,
+				E2CAB0851F00BD3E009A07FA /* TerminusUISource.bundle in Resources */,
+				E2CAB0751F00BA34009A07FA /* TerminusLocalizable.strings in Resources */,
+				E2CAB06E1F00B9EF009A07FA /* ble_device_name.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2CAB0421F00B85E009A07FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CAB0511F00B85E009A07FA /* ViewController.m in Sources */,
+				E2CAB04E1F00B85E009A07FA /* AppDelegate.m in Sources */,
+				E2CAB04B1F00B85E009A07FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2CAB0521F00B85E009A07FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CAB0531F00B85E009A07FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2CAB0571F00B85E009A07FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CAB0581F00B85E009A07FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2CAB0731F00BA34009A07FA /* TerminusLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CAB0741F00BA34009A07FA /* zh-Hans */,
+				E2CAB0761F00BA3D009A07FA /* en */,
+			);
+			name = TerminusLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2CAB05B1F00B85E009A07FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2CAB05C1F00B85E009A07FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2CAB05E1F00B85E009A07FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TSLSDKDemo/TSLSDKDemo.entitlements;
+				DEVELOPMENT_TEAM = 94DK5S9GMV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TSLSDKDemo/SDK",
+				);
+				INFOPLIST_FILE = TSLSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = TSLSmart.TSLSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2CAB05F1F00B85E009A07FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TSLSDKDemo/TSLSDKDemo.entitlements;
+				DEVELOPMENT_TEAM = 94DK5S9GMV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TSLSDKDemo/SDK",
+				);
+				INFOPLIST_FILE = TSLSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = TSLSmart.TSLSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2CAB0411F00B85E009A07FA /* Build configuration list for PBXProject "TSLSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CAB05B1F00B85E009A07FA /* Debug */,
+				E2CAB05C1F00B85E009A07FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CAB05D1F00B85E009A07FA /* Build configuration list for PBXNativeTarget "TSLSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CAB05E1F00B85E009A07FA /* Debug */,
+				E2CAB05F1F00B85E009A07FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2CAB03E1F00B85E009A07FA /* Project object */;
+}
