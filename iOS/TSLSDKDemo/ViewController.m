@@ -22,9 +22,11 @@
 
     
     
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(50, 100,( [UIScreen mainScreen].bounds.size.width - 100)/2, 40)];
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(50, ( [UIScreen mainScreen].bounds.size.height - 40)/2,( [UIScreen mainScreen].bounds.size.width - 100)/2, 40)];
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
+    [btn setTitle:@"开锁" forState:UIControlStateNormal];
+    
     [btn addTarget:self action:@selector(vcAction) forControlEvents:UIControlEventTouchUpInside];
     
     
