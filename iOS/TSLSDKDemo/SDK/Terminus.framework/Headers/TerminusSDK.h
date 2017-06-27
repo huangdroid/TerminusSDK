@@ -168,9 +168,14 @@
 /**
  * 获取所有钥匙数据
  *
- * @return
+ * @return 所有钥匙信息
  */
 - (NSArray *)getAllKeys;
+//获取当前钥匙的小区信息
+- (NSArray *)getAllVillageInfor;
+//获取当前钥匙的楼栋信息
+- (NSArray *)getAllVillageBuildingInfor;
+
 /**
  * 开始扫描。
  */

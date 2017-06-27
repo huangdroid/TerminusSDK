@@ -10,9 +10,6 @@
 
 #import "KeyCardModel.h"
 
-#import <objc/runtime.h>
-#import <objc/message.h>
-
 
 @interface TerminusKeyBean (TSL)
 

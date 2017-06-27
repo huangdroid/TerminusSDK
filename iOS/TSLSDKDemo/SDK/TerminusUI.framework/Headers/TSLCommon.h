@@ -42,3 +42,9 @@ static NSString *getSearchImageBundlePath(NSString *filename) {
 + (void)stopInfiniteRotation:(UIImage *)changeIamge view:(UIView *)view;
 + (void)startInfiniteRotation:(UIImage *)changeIamge view:(UIView *)view;
 @end
+
+@interface UIColor (TSL)
++ (instancetype)colorFromHex:(int)hex;
++ (instancetype)colorFromHex:(int)hex alpha:(CGFloat)alpha;
+@end
+
